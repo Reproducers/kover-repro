@@ -3,10 +3,6 @@ plugins {
     id("org.sonarqube") version "3.3"
 }
 
-kover {
-    coverageEngine.set(kotlinx.kover.api.CoverageEngine.INTELLIJ)
-}
-
 sonarqube {
     properties {
         property("sonar.host.url", "http://localhost:9000")
