@@ -8,5 +8,5 @@ class SomeClassJvmTest {
     private val someClassJvm = SomeClassJvm()
 
     @Test
-    fun someFunJvm() = assertTrue { someClassJvm.someFunJvm() == "someFunJvm" }
+    fun `some fun jvm`() = assertTrue { someClassJvm.someFunJvm() == "someFunJvm" }
 }
