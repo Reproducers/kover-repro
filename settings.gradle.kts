@@ -7,3 +7,4 @@ dependencyResolutionManagement {
 }
 
 include(":library-jvm")
+include(":library-multiplatform")

@@ -28,11 +28,11 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: library-jvm/build/reports/kover/report.xml
+          files: library-jvm/build/reports/kover/report.xml,library-multiplatform/build/reports/kover/report.xml
 
       - name: Upload to Codacy
         if: ${{ always() }}
         uses: codacy/codacy-coverage-reporter-action@v1
         with:
           project-token: ${{ secrets.CODACY_TOKEN }}
-          coverage-reports: library-jvm/build/reports/kover/report.xml
+          coverage-reports: library-jvm/build/reports/kover/report.xml,library-multiplatform/build/reports/kover/report.xml
